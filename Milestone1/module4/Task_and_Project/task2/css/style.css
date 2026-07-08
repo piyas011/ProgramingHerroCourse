@@ -210,7 +210,7 @@ main section .images_section .img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-image: url(/Milestone1/module4/Task_and_Project/task2/images/me.jpg);
+  background-image: url(/Milestone1/module4/Task_and_Project/task2/images/images\ \(2\).jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -658,3 +658,89 @@ background-color:#ED71BD ;
  
 }
 
+/*****************************************************************/
+/*****************************_Project_*************************/
+#project .top{
+  text-align: center;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#project .top .titel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #dddddd49;
+  background-color: transparent;
+  color: #002aff;
+}
+#project .top h1{
+  font-size: 4rem;
+  color: #bdbbdd;
+  margin-top: 10px;
+}
+#project .top h1 span{
+  color: #8a4bff;
+}
+#project .top p{
+  font-size: 1.2rem;
+  color: #bdbbdd;
+  margin-bottom: 10px;
+}
+#project .top .btn button{
+  padding: 8px 20px;
+  border: 1px solid #b0acf267;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 10px;
+  border-radius: 20px;
+  transition: all .3s;
+  margin-bottom: 10px;
+}
+#project .top .btn button:hover{
+  background-color: #713dd4;
+}
+
+
+
+
+/*********Project demo**********/
+#project .project_gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  height: 600px;
+  padding: 5px;
+}
+#project .project_gallery .div{
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #0d152f;
+  border: 1px solid #002aff43;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+#project .project_gallery div .images{
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  background-color: #ffffff10;
+  overflow: hidden;
+ }
+ #project .project_gallery div .images img{
+  width: 100%;
+ }
+
+ #project .project_gallery div {
+  
+ }

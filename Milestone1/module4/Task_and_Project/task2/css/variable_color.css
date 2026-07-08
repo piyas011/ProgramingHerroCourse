@@ -1,0 +1,40 @@
+:root{
+  /* ========== Primary Colors ========== */
+  --primary-color: #6C63FF;
+  --primary-light: #8B7CFF;
+  --primary-dark: #4F46E5;
+
+  /* ========== Secondary Colors ========== */
+  --secondary-color: #A855F7;
+  --accent-color: #EC4899;
+
+  /* ========== Background Colors ========== */
+  --bg-color: #0B1020;
+  --bg-secondary: #12182B;
+  --card-bg: #181F38;
+  --card-hover: #20294A;
+
+  /* ========== Text Colors ========== */
+  --text-primary: #FFFFFF;
+  --text-secondary: #B8C0D9;
+  --text-muted: #7E89A8;
+
+  /* ========== Border & Shadow ========== */
+  --border-color: #2A3356;
+  --shadow-color: rgba(108, 99, 255, 0.25);
+
+  /* ========== Status Colors ========== */
+  --success-color: #22C55E;
+  --warning-color: #F59E0B;
+  --danger-color: #EF4444;
+  --info-color: #3B82F6;
+
+  /* ========== Gradient Colors ========== */
+  --gradient-primary: linear-gradient(135deg, #6C63FF, #A855F7);
+  --gradient-secondary: linear-gradient(135deg, #4F46E5, #EC4899);
+
+  /* ========== Button Colors ========== */
+  --btn-bg: #6C63FF;
+  --btn-hover: #5B52F5;
+  --btn-text: #FFFFFF;
+}
