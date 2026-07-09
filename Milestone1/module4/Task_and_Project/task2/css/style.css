@@ -702,6 +702,10 @@ background-color:#ED71BD ;
   border-radius: 20px;
   transition: all .3s;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+#project .top .btn button.activ{
+  background-color: #8a4bff;
 }
 #project .top .btn button:hover{
   background-color: #713dd4;
@@ -719,6 +723,7 @@ background-color:#ED71BD ;
   width: 100%;
   height: 600px;
   padding: 5px;
+  align-content: flex-start;
 }
 #project .project_gallery .div{
   padding: 8px;
@@ -741,3 +746,9 @@ background-color:#ED71BD ;
  #project .project_gallery div .images img{
   width: 100%;
  }
+  #project .project_gallery .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
