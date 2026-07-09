@@ -496,7 +496,7 @@ main section .experience .div .info span {
   justify-content: space-between;
   align-items: center;
   background-color: #1d2e81;
-  /* padding: 5px 16px; */
+  padding: 5px 16px 5px 5px;
   border-radius: 30px;
   border: 1px solid #002aff;
 }
@@ -660,6 +660,9 @@ background-color:#ED71BD ;
 
 /*****************************************************************/
 /*****************************_Project_*************************/
+#project{
+  height:1000px;
+}
 #project .top{
   text-align: center;
   padding-top: 10px;
@@ -712,8 +715,6 @@ background-color:#ED71BD ;
 }
 
 
-
-
 /*********Project demo**********/
 #project .project_gallery{
   display: grid;
@@ -721,33 +722,27 @@ background-color:#ED71BD ;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
   width: 100%;
-  height: 600px;
+  height: 550px;
   padding: 5px;
 }
-#project .project_gallery .div{
-  padding: 8px;
+#project .project_gallery .card{
+ width: 100%;
+ height: 100%;
+ background-color: #090f2f8d;
+ border-radius: 15px;
+ display: grid;
+ grid-template-rows: 1.5fr 1fr;
+ overflow: hidden;
+ border: 1px solid #dddddd32;
+}
+#project .project_gallery .card .images{
+  background-color: #dddddd38;
+  height: 150px;
+  overflow: hidden;
+}
+#project .project_gallery .card .images img{
   width: 100%;
   height: 100%;
-  border-radius: 8px;
-  background-color: #0d152f;
-  border: 1px solid #002aff43;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  background-position:center;
+  object-fit: contain;
 }
-#project .project_gallery div .images{
-  width: 100%;
-  height: 150px;
-  border-radius: 8px;
-  background-color: #ffffff10;
-  overflow: hidden;
- }
-
- #project .project_gallery div .images img{
-  width: 100%;
- }
-  #project .project_gallery .content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
