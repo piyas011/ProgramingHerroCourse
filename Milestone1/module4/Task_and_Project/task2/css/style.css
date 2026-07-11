@@ -720,10 +720,11 @@ background-color:#ED71BD ;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
   width: 100%;
-  height: 550px;
+  height: 650px;
   padding: 5px;
+  justify-content: center;
 }
 #project .project_gallery .card{
  width: 100%;
@@ -744,5 +745,45 @@ background-color:#ED71BD ;
   width: 100%;
   height: 100%;
   background-position:center;
-  object-fit: contain;
+  object-fit: cover;
+}
+
+/* ************************/
+#project .project_gallery .text_section .header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+#project .project_gallery .text_section .header .logo{
+  width: 50px;
+  height: 50px;
+  background-color: #002aff;
+  border-radius: 50%;
+  margin: 0  10px;
+}
+#project .project_gallery .text_section .header h3{
+  font-size: 15px;
+  color: #abbeed;
+}
+#project .project_gallery .text_section .header strong{
+  font-size: 12px;
+}
+#project .project_gallery .text_section .lang{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+  margin: 10px 15px ;
+  gap: 8px;
+}
+#project .project_gallery .text_section .lang .icon{
+  background-color: #1d2e81;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
