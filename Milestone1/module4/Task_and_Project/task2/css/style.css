@@ -12,7 +12,7 @@ body {
   background-color: #000511;
   /* background-color: #020A1D; */
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 50px auto;
   color: #fffd;
   border: 2px solid #ffffff23;
   padding: 20px;
@@ -297,7 +297,8 @@ main section .experience .div .info span {
   font-size: 13px;
   color: hsl(244, 100%, 89%);
 }
-
+/* ================================*/
+/* ================================*/
 /* About Section  */
 #about {
   position: relative;
@@ -364,12 +365,19 @@ main section .experience .div .info span {
 }
 
 #about .left .my_experience .my_info {
-    background-color: #0d152f;
+   background-color: #0d152f;
   padding: 15px;
   border-radius: 10px;
   margin-top: 20px;
   position: relative;
   padding-bottom: 50px;
+  transition: all .3s;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+#about .left .my_experience .my_info:hover{
+  transform: translateY(-7px);
+  border: 2px solid #002aff;
 }
 #about .left .my_experience .my_info div {
   display: flex;
@@ -545,6 +553,13 @@ main section .experience .div .info span {
   padding: 10px;
   padding: 15px;
   position: relative;
+  border: 2px solid transparent;
+  transition: all .3s;
+  cursor: pointer;
+}
+#skill .technologies .div:hover{
+  transform: translateY(-5px);
+  border-color: #002aff;
 }
 
 #skill .technologies .div .top {
@@ -735,11 +750,22 @@ background-color:#ED71BD ;
  grid-template-rows: 1.5fr 1fr;
  overflow: hidden;
  border: 1px solid #dddddd32;
+ transition: all .3s;
+ border: 2px solid transparent;
+ gap: 10px;
+ padding: 5px;
+}
+#project .project_gallery .card:hover{
+  transform: scale(1.05);;
+  border-color: #002aff;
 }
 #project .project_gallery .card .images{
   background-color: #dddddd38;
   height: 150px;
   overflow: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
 }
 #project .project_gallery .card .images img{
   width: 100%;
