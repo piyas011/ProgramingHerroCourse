@@ -775,6 +775,9 @@ background-color:#ED71BD ;
 }
 
 /* ************************/
+#project .project_gallery .text_section {
+  margin-top: -10px;
+}
 #project .project_gallery .text_section .header{
   display: flex;
   justify-content: flex-start;
@@ -801,7 +804,7 @@ background-color:#ED71BD ;
   justify-content: flex-start;
   align-items: center;
   font-size: 12px;
-  margin: 10px 15px ;
+  margin: 0 15px ;
   gap: 8px;
 }
 #project .project_gallery .text_section .lang .icon{
@@ -812,4 +815,31 @@ background-color:#ED71BD ;
   justify-content: center;
   align-items: center;
   gap: 5px;
+}
+#project .project_gallery .link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin:8px;
+  transition: all .3s;
+}
+
+#project .project_gallery .link a{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid #002aff;
+  background:linear-gradient(30deg,#002aff,#00d4ff);
+  transition: .3s;
+}
+
+#project .project_gallery .link a:hover{
+  background:linear-gradient(30deg,#01ffea,#2748ec);
+
 }
