@@ -19,3 +19,13 @@ let firstName = "Piyas";
 let lastName = " Ahmed";
 let fullName = firstName + lastName;
 console.log(fullName);
+
+///////////////////////////////////////////
+let country = "Bangladesh";
+let learning = "JavaScript,css,html";
+console.log(country);
+console.log(learning);
+// //////////////////
+const isStudent = true;
+console.log(isStudent);
+
