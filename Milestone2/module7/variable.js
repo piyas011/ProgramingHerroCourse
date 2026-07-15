@@ -29,3 +29,22 @@ console.log(learning);
 const isStudent = true;
 console.log(isStudent);
 
+
+// variable name should be somthing meaningful .it will indicate what it contains 
+
+let location = 'Dhaka';
+let age = 21;
+let boyos = 21;
+// let abc = "dfdfdfdf;ldfkjdkfdf"
+let info = "mon majar";
+let brb = "jasmin";
+
+// don not use shorthand
+// its oky if the name is longer
+
+
+// 2. can not use a keyword (reserved word);
+
+
+//  const let = 26;
+//  console.log(let);
