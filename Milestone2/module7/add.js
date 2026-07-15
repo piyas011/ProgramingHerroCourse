@@ -79,4 +79,6 @@ console.log(
   false = ${typeof false}
   23.34343 = ${typeof e}
    
- `)
+ `);
+
+ console.log(10+"5");
