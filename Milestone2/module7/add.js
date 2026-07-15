@@ -49,3 +49,19 @@ console.log(`Subtraction = ${subtraction}`);
 console.log(`Multiplication = ${multiplication}`) ;
 console.log(`Divisioon = ${division}`);
 console.log(`Modulus = ${modulus}`);
+
+
+
+let studentName = fullName;
+let studentAge = 21;
+let country = "Bangladesh";
+let isStudent = true;
+
+console.log(
+    `
+     Student Name :${studentName}
+     Student Age  :${studentAge}
+     Country      :${country}
+     Is Student   :${isStudent}
+    `
+)
