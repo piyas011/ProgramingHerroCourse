@@ -65,3 +65,18 @@ console.log(
      Is Student   :${isStudent}
     `
 )
+ let a = 200;
+ let b = "Programming";
+ let c = true;
+ let d = false;
+ let e = 23.34343;
+
+
+ console.log(`
+  200 =  ${typeof a}
+  Programming = ${typeof b}
+  true = ${typeof true}
+  false = ${typeof false}
+  23.34343 = ${typeof e}
+   
+ `)
