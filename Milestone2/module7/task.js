@@ -34,7 +34,7 @@ let modulus = num1 % num2;
 
 console.log(`
     Basic Calculator 
-    
+
     ${num1} + ${num2} = ${addition}
     ${num1} - ${num2} = ${subtraction}
     ${num1} * ${num2} = ${multiplication}
@@ -42,3 +42,37 @@ console.log(`
     ${num1} % ${num2} = ${modulus}
     
     `)
+
+// Task 4 Greeting Message
+console.log(`Hello, ${firstName}! Welcome to javaScript.`);
+// Task 5 Swap Two Variables
+let a = 10 ;
+let b = 20;
+
+let priveusValue = a
+a = b;
+b = priveusValue;
+
+console.log(`a = ${a}`)
+console.log(`b = ${b}`)
+
+// Task 6 Area of a Rectangle
+let length = 12;
+let width = 8;
+
+let area = length * width;
+console.log(`Area = ${area}`);
+
+
+// Task 7 Convert Minutes to Seconds
+let minutes = 5;
+
+let seconds = minutes * 60;
+console.log(`5 Minutes =  ${seconds} Seconds `);
+
+
+// Convert Celsius to Fahernheit
+let celsius = 25;
+let F = (celsius *9/5) + 32;
+console.log(` Celsius = ${celsius}`);
+console.log(`Fahrenheit = ${F}`);
