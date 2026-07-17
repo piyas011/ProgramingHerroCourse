@@ -121,5 +121,39 @@ if (grade >= 80) {
 }else if(grade >+ 33){
     console.log("D");
 }else{
-    console.log("FAAAAAAAH");
+    console.log("FAAAAAAAH"); // 13.3% js
 }
+
+// Task 12////////////////
+
+
+// Task 13////////////////
+let voterAge = 21;
+let hasID = true;
+
+if(voterAge >= 18 && hasID){
+    console.log(`You eligible to vote`);
+}else{
+    console.log(`You Not Eligible to vote`);
+}
+let isLoggedIn = true;
+let userType = "user";
+
+if(isLoggedIn){
+    console.log("Welcome back");
+    if(userType === "admin"){
+        console.log("Admin Dashboard ");
+    }else{
+        console.log("User Dashboard");
+    }
+}else{
+    console.log("Please LogIn");
+}
+
+
+// task 14/
+
+let num = 436534343;
+
+let result = num %2 ===0 ? "Even Number" : "Odd Number";
+console.log(result);
