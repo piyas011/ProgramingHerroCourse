@@ -157,3 +157,102 @@ let num = 436534343;
 
 let result = num %2 ===0 ? "Even Number" : "Odd Number";
 console.log(result);
+
+// Task 15
+let ageChack = age >= 18 ? "Adult": "Minor";
+console.log(ageChack);
+
+// Task 16 
+let myAmount = 5000;
+let price = 4600;
+
+// if(myAmount > price){
+//     console.log("Expensive");
+// }else{
+//     console.log("Affordable");
+// }
+
+let resul2 = myAmount > price ? "Expensive" : "Affordable";
+console.log(resul2);
+
+// Task 17
+
+let hasPermission = false;
+if(!hasPermission){
+    console.log("Access Dnied");
+}
+
+// Task 18
+
+let isOnline = false;
+if(isOnline){
+    console.log("User Online");
+}else{
+    console.log("User Offline");
+}
+
+
+// Task 19
+
+let member = false
+let discountLimit = 1000;
+let totalBill = 100;
+let discount;
+
+if(member && totalBill >= discountLimit){
+ discount = 20;
+}else if(member === false && totalBill < discountLimit){
+    discount = 0;
+}else if (member === false && totalBill >= discountLimit){
+    discount = 10;
+}
+
+
+console.log(discount);
+
+
+
+// task 20
+/**
+ * userName : admin
+ * pass :  admin
+ * 
+ * userName :user
+ * pass : user
+ * 
+ * userName :moderator
+ * pass : moderator
+ *  
+*/
+
+let admin = {
+    userName : "admin",
+    pass : "admin"
+};
+
+let user = {
+    userName : "user",
+    pass : "user"
+};
+
+let moderator = {
+    userName : "moderator",
+    pass : "moderator"
+};
+
+
+
+
+let user_Name = prompt("Enter Your username");
+let user_Pass = prompt("Enter Your Password to LogIn");
+
+if(user_Name === admin.userName && user_Pass === admin.pass){
+    console.log("Admin Loglin");
+
+}else if(user_Name === user.userName && user_Pass === user.pass){
+    console.log("User LogIn");
+}else if (user_Name === moderator.userName && user_Pass=== moderator.pass){
+    console.log("Moderator Login");
+}else{
+    console.log("Log In Faild Pleas Tray agein");
+}
