@@ -14,3 +14,13 @@ console.log("End");
 for(let index = 20; index <= 30; index += 2){
     console.log(index);
 }
+
+// countdown form 20 to 0
+for(let count = 20; count >= 0; count--){
+    console.log(count);
+}
+
+//Reverse Odd Number 
+for(let oddNumber = 99; oddNumber >= 0; oddNumber -= 2 ){
+    console.log(oddNumber);
+}
