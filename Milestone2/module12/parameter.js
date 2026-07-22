@@ -24,3 +24,29 @@ function add(number1, number2) {
 }
 
 console.log(add(2, 3));
+
+console.log("+=======================================+");
+
+function sub(number1, number2) {
+  let sub = number1 - number2;
+  return sub;
+}
+
+console.log(sub(40, 20));
+
+console.log("+=======================================+");
+
+function mul(number1, number2) {
+  let mul = number1 * number2;
+  return mul;
+}
+console.log(mul(5, 5));
+console.log("+=======================================+");
+
+function sumAll(a, b, c, d) {
+  let sum = a + b + c + d;
+  return sum;
+}
+console.log(sumAll(2, 3, 4, 5));
+
+console.log("+=======================================+");
