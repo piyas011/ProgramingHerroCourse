@@ -50,3 +50,10 @@ function sumAll(a, b, c, d) {
 console.log(sumAll(2, 3, 4, 5));
 
 console.log("+=======================================+");
+
+function num(num) {
+  let result = num * num;
+  console.log(result);
+}
+
+num(5);
