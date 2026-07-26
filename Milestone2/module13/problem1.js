@@ -1,3 +1,4 @@
+console.log("===================================");
 {
   // Problem 1
 
@@ -12,6 +13,7 @@
   const isNumber = evenOddChack(number);
   console.log(` ${number} is ${isNumber}`);
 }
+console.log("===================================");
 {
   // Problem 2
   function sumRange(number) {
@@ -24,6 +26,7 @@
 
   console.log(`Total sum = ${sumRange(10)}`);
 }
+console.log("===================================");
 {
   // Problem 3 | Factorial of a number
   const number = 5;
@@ -38,6 +41,7 @@
   console.log(` The Factorial Number Of ${number} = ${factorialNumber}`);
 }
 
+console.log("===================================");
 {
   /**
    * Problem 4 | FizzBuzz (1 to n)
@@ -62,3 +66,18 @@
   }
   divisibleCheck(nNumber);
 }
+console.log("===================================");
+{
+  /**
+   *  Problem 5 | Reverse a String
+   */
+
+  const isString = "Hello this is a String Type";
+  function reverseString(str) {
+    return str.split("").reverse().join("");
+  }
+  const result = reverseString(isString);
+  console.log(`Main String => ${isString}`);
+  console.log(`Reverse String => ${result}`);
+}
+console.log("===================================");
