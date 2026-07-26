@@ -44,7 +44,7 @@
    * Loop through Number from 1 to n . If a number is divisible by 3, Print "Fizz", if divisible by 5, Print "Buzz"; if divisible by both. Print "FizzBuzz"; otherwise print the number itself.
    */
 
-  let nNumber = 23; //use prompt();
+  let nNumber = 100; //use prompt();
   function divisibleCheck(n) {
     let result;
     for (let i = 1; i <= n; i++) {
@@ -60,5 +60,5 @@
       console.log(result);
     }
   }
-  divisibleChack(nNumber);
+  divisibleCheck(nNumber);
 }
