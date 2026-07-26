@@ -81,3 +81,21 @@ console.log("===================================");
   console.log(`Reverse String => ${result}`);
 }
 console.log("===================================");
+{
+  /**
+   * Problem 6 |  Count Vowels in a String
+   */
+  let string = "eAIiii";
+  string = string.toLowerCase();
+  function getVowels(str) {
+    const vowels = "a e i o n";
+    let countVowels = 0;
+    for (let i = 0; i < str.length; i++) {
+      if (vowels.includes(str[i])) {
+        countVowels++;
+      }
+    }
+    return countVowels;
+  }
+  console.log(getVowels(string));
+}
