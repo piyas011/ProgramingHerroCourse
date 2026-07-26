@@ -24,3 +24,16 @@
 
   console.log(`Total sum = ${sumRange(10)}`);
 }
+{
+  // Problem 3 | Factorial of a number
+  const number = 5;
+  function getFactorialNumber(number) {
+    let result = 1;
+    for (let i = 1; i <= number; i++) {
+      result *= i;
+    }
+    return result;
+  }
+  const factorialNumber = getFactorialNumber(number);
+  console.log(` The Factorial Number Of ${number} = ${factorialNumber}`);
+}
