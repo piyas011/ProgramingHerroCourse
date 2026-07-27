@@ -20,7 +20,7 @@ console.log("===================================");
    * "my name is alex, I am 20 Years old from dhaka,"
    */
 
-  let currentYear = 2026;
+  let currentYear = new Date().getFullYear();
   function introduce(name, birthYear, city) {
     let age = currentYear - birthYear;
     return `Hello My Name Is ${name} and I am ${age} Years old and I am From ${city}`;
