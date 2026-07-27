@@ -28,3 +28,15 @@ console.log("===================================");
   let result = introduce("Piyas Ahmed", 2005, "Dhaka");
   console.log(result);
 }
+console.log("===================================");
+{
+  /**
+     * Problem 3 : applyDiscount(price, percent) + describeOrder(name,total)
+     * Purpose : applyDiscount should return the discounted price descriveOrder should
+     
+     Expected: describeOrder("Same",100) -> "Sam's order total is $90 after discount.
+    */
+  //    function applyDiscount(price,percent){
+  //     price
+  //    }
+}
