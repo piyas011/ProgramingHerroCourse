@@ -22,30 +22,3 @@ const person = {
 
 console.log(person["name"]);
 console.log(person.age);
-
-console.log("=========================================");
-{
-  const person = {
-    name: "Piyas ",
-    age: 21,
-    isStudent: true,
-    isSingel: true,
-    "home Address": "Netrokona",
-  };
-  console.log(person.name);
-  person.name = "Piyas Ahmed";
-  console.log(person.name);
-  console.log(person.age);
-  person.age = 20;
-  console.log(person.age);
-  console.log(person.isStudent);
-  person.isStudent = false;
-  console.log(person.isStudent);
-  console.log(person.isSingel);
-
-  console.log(person["name"]);
-  console.log(person["age"]);
-  console.log(person["isSingel"]);
-  console.log(person["isStudent"]);
-  console.log(person["home Address"]);
-}
