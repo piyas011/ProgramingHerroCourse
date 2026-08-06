@@ -22,3 +22,29 @@ const calculateTotal = (discount, ...price) => {
   return `Total Price = ${totalPrice} After Discount ${discount}% = ${totalPriceAfterDiscount} Taka`;
 };
 console.log(calculateTotal(10, 100, 200));
+console.log("=======================================");
+/*
+
+  Problem 2 : marge & Deduplicate Arrays
+  marge two arrays and remove duplicates using spread + set,
+
+  example : [2,3,4,5] + [3,4,5,6,]+[4,5,6,7,8,8];
+ 
+ */
+
+let array1 = [1, 2, 3, 4, 5];
+let array2 = [3, 4, 5, 6, 7, 7, 8];
+
+let matgedArray = [...array1, ...array2];
+console.log(matgedArray);
+
+// let newArray = [];
+// for (const num of matgedArray) {
+//   if (!newArray.includes(num)) {
+//     newArray.push(num);
+//   }
+// }
+let newArray = [...new Set(matgedArray)];
+console.log(newArray);
+
+// console.log(newArray);
