@@ -28,3 +28,35 @@ console.log(applyDiscount(priceArray, discount));
 console.log(priceArray);
 
 console.log("==========================================");
+
+/**
+ * Problem 2 : passing students Filter
+ * getPassingStudents(students,threshold) - return only the students whose marks are grater than of equal to the given threshold.
+ *
+ * Input : student = [
+ *  {name : "Piyas Ahmed",marks : 90},
+ *  {name : "Rohim Ahmed",marks : 60},
+ *  {name : "Rakib Ahmed",marks : 40},
+ * ]
+ */
+
+const threshold = 60;
+const students = [
+  { name: "Piyas Ahmed", marks: 90 },
+  { name: "Rohim Ahmed", marks: 60 },
+  { name: "Rakib Ahmed", marks: 40 },
+];
+
+const getPassingStudents = (students, threshold) => {
+  //   console.log(students, threshold);
+  const passStudents = students.filter((student) => {
+    if (student.marks >= 60) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  return passStudents;
+};
+
+console.log(getPassingStudents(students, threshold));
