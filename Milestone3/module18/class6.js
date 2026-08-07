@@ -55,3 +55,52 @@ const addGrade = (students) => {
 
 console.log(addGrade(studentResult));
 console.log("Main array", studentResult);
+
+console.log("+++++++++++++++++++++++++++++++++++++++++++++++");
+
+/**
+ * Cart total calculator
+ *
+ * you have an array of cart items, each with a name , price,and qty calculator
+ * 1. total number of items in the cart (sum of all qty)
+ * 2. total cost (sum of price x qty for each item)
+ *
+ * Them print final message using a template string:
+ * "Total : x Item , Y taka"
+ *
+ * INPUT :
+ * [
+ * {name:"Pen",price:100,qty:1}
+ * {name:"Notebook",price:100,qty:2}
+ * ]
+ *
+ * OUTPUT : Total : 3 items, 300 taka
+ *
+ * Bonus : if the cart is missing (null undefined), don't crash -
+ * Print "total :0 items, 0 taka"
+ */
+
+const cart = [
+  { name: "Pen", price: 100, qty: 1 },
+  { name: "Notebook", price: 100, qty: 2 },
+];
+
+const calculateTotalPrice = (cart) => {
+  let totalPrice = 0;
+  let totalQty = 0;
+
+  if (!cart) {
+    return `Total ${totalQty} items ${totalPrice} Taka`;
+  }
+
+  // console.log(cart);
+  for (const product of cart) {
+    const { price, qty } = product;
+    totalQty += qty;
+    totalPrice += price * qty;
+  }
+  return `Total ${totalQty} Item ${totalPrice} Taka, `;
+};
+
+console.log(calculateTotalPrice(cart));
+console.log(calculateTotalPrice([]));
