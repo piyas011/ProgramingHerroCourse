@@ -1,11 +1,11 @@
-let hello = "Hello ts";
+// let hello = "Hello ts";
 hello = "ts";
 console.log(hello);
 
-let ts = "Hello typeScript";
+// let ts = "Hello typeScript";
 ts = "type";
 console.log(ts);
-let message = "hello typeScript";
+// let message = "hello typeScript";
 console.log(message);
-let charge = 323;
+// let charge = 323;
 console.log(charge);
