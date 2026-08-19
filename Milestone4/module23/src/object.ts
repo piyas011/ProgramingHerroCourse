@@ -29,3 +29,14 @@ const rohim = createStudent("Rohim", 20, "rohim@gmail.com", 200);
 console.log(piyas, rohim);
 
 const myName: string = "Piyas Ahmed";
+
+function createStudent2(name: string, age: number, gpa: number, email: string) {
+  const student = { name, age, gpa, email };
+  return student;
+}
+
+let piyasA = createStudent2("Piyas Ahmed", 21, 4.5, "@gmail.com");
+let ahmed = createStudent2("ahmed", 20, 4.9, "Hello@gmail.com");
+
+console.log(piyasA);
+console.log(ahmed);
