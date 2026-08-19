@@ -27,3 +27,5 @@ piyas.marks = 0;
 const rohim = createStudent("Rohim", 20, "rohim@gmail.com", 200);
 
 console.log(piyas, rohim);
+
+const myName: string = "Piyas Ahmed";
