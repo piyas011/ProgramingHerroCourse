@@ -9,6 +9,6 @@ const getStockStatus = (stock) => {
     }
     return "Out of Stock";
 };
-const status = getStockStatus(100);
+const status = getStockStatus(10);
 console.log(status);
 //# sourceMappingURL=getStockStatus.js.map
