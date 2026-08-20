@@ -7,7 +7,7 @@ const getTicketPrice = (age) => {
     if (age < 0 || age > 150) {
         return "Age is not valid";
     }
-    if (age > 5) {
+    if (age < 5) {
         return 0;
     }
     else if (age <= 12) {
@@ -18,5 +18,6 @@ const getTicketPrice = (age) => {
     }
     return 120;
 };
-getTicketPrice(45);
+const user1 = getTicketPrice(200);
+console.log(user1);
 //# sourceMappingURL=getTicketPrice.js.map
