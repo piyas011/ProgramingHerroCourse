@@ -6,7 +6,7 @@
 // };
 Object.defineProperty(exports, "__esModule", { value: true });
 const formatUserProfile = (user) => {
-    return ` ${user.name} is ${user.age} years old and lives in ${user.city}`;
+    return `${user.name}  is ${user.age} years old and lives in ${user.city}`;
 };
-console.log(formatUserProfile({ name: "Piyas", age: 21, city: "Dhaka" }));
+console.log(formatUserProfile({ name: "Piyas Ahmed", age: 21, city: "Dhaka" }));
 //# sourceMappingURL=formatUserProfile.js.map
