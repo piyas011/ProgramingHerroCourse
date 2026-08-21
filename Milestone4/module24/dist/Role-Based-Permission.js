@@ -6,4 +6,6 @@ const canEdit = (role) => {
     return role === "admin" || role === "editor" ? true : false;
 };
 console.log(canEdit("admin"));
+console.log(canEdit("editor"));
+console.log(canEdit("viewer"));
 //# sourceMappingURL=Role-Based-Permission.js.map
