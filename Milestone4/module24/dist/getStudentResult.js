@@ -37,4 +37,5 @@ const getStudentResult = (studentsObj) => {
     };
 };
 console.log(getStudentResult(student1));
+console.log(getStudentResult(student2));
 //# sourceMappingURL=getStudentResult.js.map
