@@ -29,7 +29,7 @@ interface Product {
 }
 
 const findProducts = (products: Product[], category: string): Product[] => {
-  const getProducts = products.filter(
+  const getProducts: Product[] = products.filter(
     (product: Product) => product.category === category,
   );
   return getProducts;
