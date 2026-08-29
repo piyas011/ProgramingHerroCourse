@@ -1,0 +1,144 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Hello World</title>
+  </head>
+  <body>
+    <h1 class="text-blue-500">Hello World</h1>
+  </body>
+</html> -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Cart</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div class="max-w-6xl mx-auto px-6 py-5">
+        <h1 class="text-2xl font-bold text-gray-800">🛒 My Shopping Cart</h1>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="max-w-6xl mx-auto px-6 py-10">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Cart Products -->
+        <section class="lg:col-span-2 space-y-4">
+          <!-- Product 1 -->
+          <div class="bg-white rounded-xl shadow p-5 flex items-center gap-5">
+            <img
+              src="https://via.placeholder.com/120"
+              alt="Keyboard"
+              class="w-24 h-24 object-cover rounded-lg"
+            />
+
+            <div class="flex-1">
+              <h2 class="text-lg font-semibold text-gray-800">
+                Mechanical Keyboard
+              </h2>
+
+              <p class="text-gray-500 text-sm mt-1">RGB Mechanical Keyboard</p>
+
+              <p class="text-blue-600 font-bold mt-2">৳1,200</p>
+            </div>
+
+            <!-- Quantity -->
+            <div class="flex items-center border rounded-lg">
+              <button class="px-3 py-1 text-lg hover:bg-gray-100">−</button>
+
+              <span class="px-4"> 2 </span>
+
+              <button class="px-3 py-1 text-lg hover:bg-gray-100">+</button>
+            </div>
+
+            <!-- Total -->
+            <div class="text-right">
+              <p class="font-bold text-gray-800">৳2,400</p>
+
+              <button class="text-red-500 text-sm mt-2 hover:underline">
+                Remove
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="bg-white rounded-xl shadow p-5 flex items-center gap-5">
+            <img
+              src="https://via.placeholder.com/120"
+              alt="Mouse"
+              class="w-24 h-24 object-cover rounded-lg"
+            />
+
+            <div class="flex-1">
+              <h2 class="text-lg font-semibold text-gray-800">Gaming Mouse</h2>
+
+              <p class="text-gray-500 text-sm mt-1">
+                High Precision Gaming Mouse
+              </p>
+
+              <p class="text-blue-600 font-bold mt-2">৳800</p>
+            </div>
+
+            <!-- Quantity -->
+            <div class="flex items-center border rounded-lg">
+              <button class="px-3 py-1 text-lg hover:bg-gray-100">−</button>
+
+              <span class="px-4"> 1 </span>
+
+              <button class="px-3 py-1 text-lg hover:bg-gray-100">+</button>
+            </div>
+
+            <!-- Total -->
+            <div class="text-right">
+              <p class="font-bold text-gray-800">৳800</p>
+
+              <button class="text-red-500 text-sm mt-2 hover:underline">
+                Remove
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cart Summary -->
+        <aside class="bg-white rounded-xl shadow p-6 h-fit">
+          <h2 class="text-xl font-bold text-gray-800 mb-6">Order Summary</h2>
+
+          <div class="flex justify-between mb-3">
+            <span class="text-gray-500"> Subtotal </span>
+
+            <span class="font-medium"> ৳3,200 </span>
+          </div>
+
+          <div class="flex justify-between mb-3">
+            <span class="text-gray-500"> Delivery </span>
+
+            <span class="font-medium"> ৳100 </span>
+          </div>
+
+          <hr class="my-5" />
+
+          <div class="flex justify-between text-lg font-bold">
+            <span> Total </span>
+
+            <span class="text-blue-600"> ৳3,300 </span>
+          </div>
+
+          <button
+            class="w-full mt-6 bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+          >
+            Checkout
+          </button>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
