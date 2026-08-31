@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind Css cdn link  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>tailwind Css</title>
+  </head>
+  <body>
+    <h1
+      class="font-bold text-center text-[16px] md:text-2xl lg:text-4xl my-5 p-5 border-b-5 border-b-amber-600"
+    >
+      Layout Using Grid
+    </h1>
+    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div
+        class="w-full h-50 bg-blue-700 m-1 content-center text-3xl text-center"
+      >
+        Card 1
+      </div>
+      <div
+        class="w-full h-50 bg-blue-700 m-1 content-center text-3xl text-center"
+      >
+        Card 2
+      </div>
+      <div
+        class="w-full h-50 bg-blue-700 m-1 content-center text-3xl text-center"
+      >
+        Card 3
+      </div>
+      <div
+        class="w-full h-50 bg-blue-700 m-1 content-center text-3xl text-center"
+      >
+        Card 4
+      </div>
+    </div>
+  </body>
+</html>
