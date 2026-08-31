@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+@media (max-width: 800px) {
+  h1 {
+    background-color: black;
+    color: wheat;
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    background-color: green;
+    color: red;
+    font-size: 40px;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    background-color: red;
+    color: gainsboro;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 300px) {
+  h1 {
+    background-color: hotpink;
+    color: black;
+    font-size: 12px;
+  }
+}
+@media (max-width: 300px) {
+  h1 {
+    background-color: blueviolet;
+    color: red;
+    font-size: 8px;
+  }
+}
