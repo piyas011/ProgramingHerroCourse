@@ -20,12 +20,12 @@
     />
   </head>
   <body class="">
-    <header class="py-5 bg-[#F1EDE6]">
+    <header class="py-5 bg-[#F1EDE6] w-full">
       <nav class="flex justify-around items-center">
         <img
           src="./Nature-s-platter-b14-m25/assets/nav-logo.png"
           alt="Nature.com"
-          class="logo cursor-pointer"
+          class="logo cursor-pointer w-20"
         />
 
         <ul class="hidden md:flex   md:gap-4 lg:gap-8 text-[16px] md:text-[18px]">
@@ -43,13 +43,13 @@
           ></span>
           <button
             type="button"
-            class="px-5 py-1 border-2 border-green-500 rounded-md cursor-pointer outline-green-300 invisible md:visible"
+            class="px-5 py-1 border-2 border-green-500 rounded-md cursor-pointer outline-green-300 hidden md:visible"
           >
             Login
           </button>
           <button
             type="button"
-            class="px-5 py-1 bg-green-500 rounded-md text-white font-bold tracking-wide cursor-pointer hover:bg-green-400 outline-green-300 invisible md:visible"
+            class="px-5 py-1 bg-green-500 rounded-md text-white font-bold tracking-wide cursor-pointer hover:bg-green-400 outline-green-300 hidden md:visible"
           >
             Register
           </button>
@@ -58,7 +58,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class=" px-5">
       <!-- Hero section -->
       <section class="bg-[#F1EDE6]  ">
         <h1
@@ -70,7 +70,7 @@
             Count</span
           >On, Prices You'll Love!
         </h1>
-        <p class="text-center mt-5 sm:mt-8 md:10 md:text-2xl tracking-tight leading-6 mb-6">
+        <p class="text-center px-10 mt-5 sm:mt-8 md:10 md:text-2xl tracking-tight leading-6 mb-6">
           Shop your daily essentials at unbeatable prices. From fresh produce to
           pantry <br />
           staples, we’ve got you covered every day!
@@ -135,11 +135,14 @@
 
 
       <!--Product Section -->
-      <section class="bg-[#F1EDE6] py-30 ">
-        <div class="container mx-auto  ">
-          <h3 class=" text-2xl md:text-5xl text-[#179800] font-bold my-10">Popular Products</h3>
-          <div class=" w-full md:h-100 mt-5 grid mgrid-cols-1 md:grid-cols-6 md:gap-7  ">
-            <div class="bg-green-400 col-span-2  rounded-4xl p-10 relative " >
+      <section class="bg-[#F1EDE6] py-20 rounded-4xl ">
+
+        <div class="container mx-auto px-4 ">
+
+          <h3 class=" text-2xl md:text-5xl lg:text-6xl text-[#179800] font-bold my-10">Popular Products</h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="bg-green-400 row-span-1 md:col-span-4  rounded-4xl p-10 relative " >
               <strong class="text-4xl text-white">20% off</strong>
               <p class="mt-8 leading-6 text-[#3d3d3d]">Discover a world of treats, toys, and <br> essentials handpicked for</p>
               <button type="button" class="mt-5 px-10 py-2 rounded-md bg-white cursor-pointer hover:bg-amber-100"> Buy Now</button>
@@ -147,12 +150,12 @@
               <img src="./Nature-s-platter-b14-m25/assets/popular.png" alt="Popular" class=" w-60 absolute right-0 bottom-0 drop-shadow-white ">
             </div>
             <!-- Product  -->
-            <div class="mt-4 md:col-span-4 md:rounded-4xl grid grid-cols-1 md:grid-cols-3 lg:grid-rows-3 gap-2">
+            <div class="mt-4  md:rounded-4xl grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 sm:col-span-2 md:col-span-3 lg:grid-rows-4 gap-2">
               
               
-              <div class="bg-white w-full rounded-3xl flex items-center gap-5 px-5">
-                <div>
-                  <img src="./Nature-s-platter-b14-m25/assets/onion.png" alt="onion">
+               <div class="bg-white w-full h-50 rounded-3xl flex items-center gap-5 px-5">
+                <div class="h-35 w-35 flex items-center justify-center ">
+                  <img src="./Nature-s-platter-b14-m25/assets/onion.png" alt="onion" class=" w-full">
                 </div>
                 <div>
                   <strong>⭐ 4.5</strong>
@@ -161,104 +164,90 @@
                 </div>
               </div>
               
-              
-              <div class="bg-white rounded-3xl flex items-center gap-5 px-5">
-                <div>
-                  <img src="./Nature-s-platter-b14-m25/assets/tomato.png" alt="tomato">
+                  <div class="bg-white w-full h-50 rounded-3xl flex items-center gap-5 px-5">
+                <div class="h-35 w-35 flex items-center justify-center ">
+                  <img src="./Nature-s-platter-b14-m25/assets/onion.png" alt="onion" class=" w-full">
                 </div>
                 <div>
                   <strong>⭐ 4.5</strong>
-                  <p class="font-bold text-2xl text-gray-800">Tomato 500 g</p>
+                  <p class="font-bold text-2xl text-gray-800">Onion 1 KG</p>
                   <strong>$39.99</strong>
                 </div>
               </div>
-               <div class="bg-white rounded-3xl flex items-center gap-5 px-5">
-                <div>
-                  <img src="./Nature-s-platter-b14-m25/assets/potato.png" alt="potato">
+                  <div class="bg-white w-full h-50 rounded-3xl flex items-center gap-5 px-5">
+                <div class="h-35 w-35 flex items-center justify-center ">
+                  <img src="./Nature-s-platter-b14-m25/assets/onion.png" alt="onion" class=" w-full">
                 </div>
                 <div>
                   <strong>⭐ 4.5</strong>
-                  <p class="font-bold text-2xl text-gray-800">Potato 1 KG</p>
+                  <p class="font-bold text-2xl text-gray-800">Onion 1 KG</p>
+                  <strong>$39.99</strong>
+                </div>
+              </div>
+                  <div class="bg-white w-full h-50 rounded-3xl flex items-center gap-5 px-5">
+                <div class="h-35 w-35 flex items-center justify-center ">
+                  <img src="./Nature-s-platter-b14-m25/assets/onion.png" alt="onion" class=" w-full">
+                </div>
+                <div>
+                  <strong>⭐ 4.5</strong>
+                  <p class="font-bold text-2xl text-gray-800">Onion 1 KG</p>
+                  <strong>$39.99</strong>
+                </div>
+              </div>
+                  <div class="bg-white w-full h-50 rounded-3xl flex items-center gap-5 px-5">
+                <div class="h-35 w-35 flex items-center justify-center ">
+                  <img src="./Nature-s-platter-b14-m25/assets/onion.png" alt="onion" class=" w-full">
+                </div>
+                <div>
+                  <strong>⭐ 4.5</strong>
+                  <p class="font-bold text-2xl text-gray-800">Onion 1 KG</p>
+                  <strong>$39.99</strong>
+                </div>
+              </div>
+                  <div class="bg-white w-full h-50 rounded-3xl flex items-center gap-5 px-5">
+                <div class="h-35 w-35 flex items-center justify-center ">
+                  <img src="./Nature-s-platter-b14-m25/assets/onion.png" alt="onion" class=" w-full">
+                </div>
+                <div>
+                  <strong>⭐ 4.5</strong>
+                  <p class="font-bold text-2xl text-gray-800">Onion 1 KG</p>
+                  <strong>$39.99</strong>
+                </div>
+              </div>
+                  <div class="bg-white w-full h-50 rounded-3xl flex items-center gap-5 px-5">
+                <div class="h-35 w-35 flex items-center justify-center ">
+                  <img src="./Nature-s-platter-b14-m25/assets/onion.png" alt="onion" class=" w-full">
+                </div>
+                <div>
+                  <strong>⭐ 4.5</strong>
+                  <p class="font-bold text-2xl text-gray-800">Onion 1 KG</p>
+                  <strong>$39.99</strong>
+                </div>
+              </div>
+                  <div class="bg-white w-full h-50 rounded-3xl flex items-center gap-5 px-5">
+                <div class="h-35 w-35 flex items-center justify-center ">
+                  <img src="./Nature-s-platter-b14-m25/assets/onion.png" alt="onion" class=" w-full">
+                </div>
+                <div>
+                  <strong>⭐ 4.5</strong>
+                  <p class="font-bold text-2xl text-gray-800">Onion 1 KG</p>
+                  <strong>$39.99</strong>
+                </div>
+              </div>
+                  <div class="bg-white w-full h-50 rounded-3xl flex items-center gap-5 px-5">
+                <div class="h-35 w-35 flex items-center justify-center ">
+                  <img src="./Nature-s-platter-b14-m25/assets/onion.png" alt="onion" class=" w-full">
+                </div>
+                <div>
+                  <strong>⭐ 4.5</strong>
+                  <p class="font-bold text-2xl text-gray-800">Onion 1 KG</p>
                   <strong>$39.99</strong>
                 </div>
               </div>
               
-              
-              <div class="bg-white rounded-3xl flex items-center gap-5 px-5">
-                <div>
-                  <img src="./Nature-s-platter-b14-m25/assets/potato.png" alt="potato">
-                </div>
-                <div>
-                  <strong>⭐ 4.5</strong>
-                  <p class="font-bold text-2xl text-gray-800">Potato 1 KG</p>
-                  <strong>$39.99</strong>
-                </div>
-              </div>
+           
 
-                 
-              <div class="bg-white rounded-3xl flex items-center gap-5 px-5">
-                <div>
-                  <img src="./Nature-s-platter-b14-m25/assets/onion.png" alt="onion">
-                </div>
-                <div>
-                  <strong>⭐ 4.5</strong>
-                  <p class="font-bold text-2xl text-gray-800">Onion 1 KG</p>
-                  <strong>$39.99</strong>
-                </div>
-              </div>
-              
-              
-              <div class="bg-white rounded-3xl flex items-center gap-5 px-5">
-                <div>
-                  <img src="./Nature-s-platter-b14-m25/assets/tomato.png" alt="tomato">
-                </div>
-                <div>
-                  <strong>⭐ 4.5</strong>
-                  <p class="font-bold text-2xl text-gray-800">Tomato 500 g</p>
-                  <strong>$39.99</strong>
-                </div>
-              </div>
-              
-              
-             
-              
-                 
-              <div class="bg-white rounded-3xl flex items-center gap-5 px-5">
-                <div>
-                  <img src="./Nature-s-platter-b14-m25/assets/onion.png" alt="onion">
-                </div>
-                <div>
-                  <strong>⭐ 4.5</strong>
-                  <p class="font-bold text-2xl text-gray-800">Onion 1 KG</p>
-                  <strong>$39.99</strong>
-                </div>
-              </div>
 
-                <div class="bg-white rounded-3xl flex items-center gap-5 px-5">
-                <div>
-                  <img src="./Nature-s-platter-b14-m25/assets/potato.png" alt="potato">
-                </div>
-                <div>
-                  <strong>⭐ 4.5</strong>
-                  <p class="font-bold text-2xl text-gray-800">Potato 1 KG</p>
-                  <strong>$39.99</strong>
-                </div>
-              </div>
-              
-              
-              <div class="bg-white rounded-3xl flex items-center gap-5 px-5">
-                <div>
-                  <img src="./Nature-s-platter-b14-m25/assets/tomato.png" alt="tomato">
-                </div>
-                <div>
-                  <strong>⭐ 4.5</strong>
-                  <p class="font-bold text-2xl text-gray-800">Tomato 500 g</p>
-                  <strong>$39.99</strong>
-                </div>
-              </div>
-              
-              
-            
               
               
               
