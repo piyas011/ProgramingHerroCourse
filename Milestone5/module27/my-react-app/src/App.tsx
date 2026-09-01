@@ -1,12 +1,16 @@
 import "./App.css";
+import "./todo";
+import Todo from "./todo";
 
 function App() {
   return (
     <>
       <h1>My First React App</h1>
-      <Developer language="JavaScript" experience="10 Years"></Developer>
+      <Todo task="Practice Coding" time="5:00 AM"></Todo>
+      <Todo task="Take a sower" time="1:00AM"></Todo>
+      {/* <Developer language="JavaScript" experience="10 Years"></Developer>
 
-      <Developer language="ReactJS" experience="5 years"></Developer>
+      <Developer language="ReactJS" experience="5 years"></Developer> */}
       {/* <Student name="Piyas Ahmed" gpa="2.90"></Student>
       <Student name="Rohim" gpa="2.90"></Student>
       <Student name="Korim" gpa="4.00"></Student>
