@@ -5,12 +5,3 @@
 //     </li>
 //   );
 // }
-
-function Todo({ task, time }) {
-  return (
-    <li>
-      Do this Work : {task} Time : {time}
-    </li>
-  );
-}
-export default Todo;
