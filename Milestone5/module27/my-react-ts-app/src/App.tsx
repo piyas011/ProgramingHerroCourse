@@ -17,14 +17,16 @@ function App() {
   //   "Bangla",
   //   "English",
   // ];
+
   return (
     <>
       <h1>Get started With Me</h1>
       <h2>Hello</h2>
-      <Users userName="Piyas Ahmed" userAge={21} isLoggedIn={true}></Users>
-      <Users userName="Prity" userAge={20} isLoggedIn={false}></Users>
-      <Users userName="Mishu" userAge={20} isLoggedIn={true}></Users>
+      <Users></Users>
 
+      {
+        // <Users></Users>
+      }
       {/* {books.map((book) => (
         <Books name={book}></Books>
       ))} */}
