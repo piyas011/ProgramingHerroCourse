@@ -1,9 +1,18 @@
+import { Suspense } from "react";
 import "./App.css";
-import AddRun from "./batters";
-import ClickEvent from "./clickEvent";
-// import Cart from "./cart";
-import Counter from "./counter";
-import AddToCart from "./event";
+import Users from "./usersData";
+
+// import AddRun from "./batters";
+// import ClickEvent from "./clickEvent";
+// // import Cart from "./cart";
+// import Counter from "./counter";
+// import AddToCart from "./event";
+
+const usersDataPromise = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const data = await res.json();
+  return data;
+};
 
 function App() {
   // function handelClick() {
@@ -20,6 +29,7 @@ function App() {
 
   return (
     <>
+      <h1>Hello World</h1>
       {/* class 1  */}
       {/* <button onClick={handelClick}>Click Me</button>
       <button onClick={handelClick2}>Click Me 2</button>
@@ -30,12 +40,15 @@ function App() {
 
       {/* class 2 */}
       {/* <Cart></Cart> */}
-      <Counter></Counter>
+      {/* <Counter></Counter>
 
       <AddToCart></AddToCart>
       <ClickEvent></ClickEvent>
-      <AddRun></AddRun>
+      <AddRun></AddRun> */}
       {/* class 2 */}
+      <Suspense fallback={<p>Loading...</p>}>
+        <Users usersDataPromise={usersDataPromise()}></Users>
+      </Suspense>
     </>
   );
 }

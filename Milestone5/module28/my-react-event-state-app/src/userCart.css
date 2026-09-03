@@ -1,0 +1,8 @@
+.user {
+  border: 2px solid palegreen;
+  border-radius: 5px;
+  margin: 10px;
+  padding-bottom: 10px;
+  background-color: gray;
+  color: white;
+}
