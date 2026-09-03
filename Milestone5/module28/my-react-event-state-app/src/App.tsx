@@ -1,4 +1,5 @@
 import "./App.css";
+import ClickEvent from "./clickEvent";
 // import Cart from "./cart";
 import Counter from "./counter";
 import AddToCart from "./event";
@@ -31,6 +32,7 @@ function App() {
       <Counter></Counter>
 
       <AddToCart></AddToCart>
+      <ClickEvent></ClickEvent>
       {/* class 2 */}
     </>
   );

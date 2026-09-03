@@ -12,7 +12,7 @@ export default function Counter() {
 
   return (
     <div>
-      <h3>Shopping Cart</h3>
+      <h3>Shopping Car 1</h3>
       <p> Total Item : {count} </p>
       <button onClick={handelClick}>Add Cart 1</button>
       <button onClick={handelClick4}>Add Cart 4</button>
