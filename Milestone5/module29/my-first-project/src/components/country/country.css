@@ -5,3 +5,19 @@
   border-radius: 20px;
   background-color: #00000015;
 }
+
+.visited {
+  font-size: 20px;
+  background-color: green;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.country-visited {
+  background-color: lightgreen;
+}
