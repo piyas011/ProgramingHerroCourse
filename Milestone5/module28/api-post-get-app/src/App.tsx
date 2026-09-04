@@ -24,15 +24,15 @@
 
 // export default App;
 
-import { Suspense } from "react";
+// import { Suspense } from "react";
 import "./App.css";
-import Post from "./post";
+// import Post from "./post";
 
-const userPostPromise = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const data = res.json();
-  return data;
-};
+// const userPostPromise = async () => {
+// const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+// const data = res.json();
+// return data;
+// };
 
 function App() {
   return (
@@ -41,9 +41,9 @@ function App() {
         <h1>Hello React !</h1>
       </div>
 
-      <Suspense fallback={<h4>Loading...</h4>}>
+      {/* <Suspense fallback={<h4>Loading...</h4>}>
         <Post userPostPromise={userPostPromise()}></Post>
-      </Suspense>
+      </Suspense> */}
     </>
   );
 }
