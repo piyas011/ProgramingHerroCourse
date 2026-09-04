@@ -5,7 +5,7 @@
 
 import { Suspense } from "react";
 import type { CountryType } from "./type";
-import Countries from "./components/countries";
+import Countries from "./components/countries/countries";
 
 // // Create a Promise to load data
 // const countriesPromise = async (): Promise<CountryType[]> => {
