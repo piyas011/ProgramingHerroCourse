@@ -1,0 +1,20 @@
+.posts {
+  background-color: #8080808f;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid tomato;
+  border-radius: 20px;
+  h4 {
+    font-size: 25px;
+    color: black;
+  }
+  strong {
+    color: black;
+  }
+
+  p {
+    margin-top: 10px;
+    color: black;
+  }
+}
