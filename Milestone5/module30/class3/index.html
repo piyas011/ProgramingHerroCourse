@@ -4,6 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn Html Dom</title>
+
+    <style>
+      #btn {
+        background-color: cadetblue;
+        padding: 8px 15px;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-left: 10px;
+      }
+
+      #btn:hover {
+        transform: scale(1.2);
+      }
+      .inp {
+        padding: 8px 15px;
+        outline-color: aqua;
+        border-radius: 10px;
+        color: gray;
+        border: 2px solid black;
+      }
+    </style>
   </head>
   <body>
     <h1 id="bd">Hello Bangladesh</h1>
@@ -11,21 +39,35 @@
 
     <p class="para">Hello this is a paragraph</p>
 
+    <img
+      src="https://img.magnific.com/free-photo/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_181624-7640.jpg?semt=ais_hybrid&w=740&q=80"
+      alt=""
+      height="150px"
+    />
+    <p></p>
+
     <input class="inp" type="text" placeholder="Enter Your Name" />
 
-    <button class="btn" type="submit">Submit</button>
+    <button id="btn" type="submit">Submit</button>
 
     <script>
       const bangladesh = document.getElementById("bd");
       const world = document.getElementById("hw");
       const paragraph = document.querySelector(".para");
       const input = document.querySelector(".inp");
-      const button = document.querySelector(".btn");
+      const button = document.querySelector("#btn");
+      const img = document.querySelector("img");
+
+      button.addEventListener(
+        "dblclick",
+        () =>
+          (img.src =
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJ4IZbkwwyJD4dq7MObC7x1gpYN0xVkTOV_X9T9ZCMQ&s=10"),
+      );
 
       bangladesh.textContent = "Hello BD";
       world.textContent = "World Hello";
     </script>
-
     <script src="./script.js"></script>
   </body>
 </html>
