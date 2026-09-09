@@ -5,8 +5,8 @@ import { FaBangladeshiTakaSign } from "react-icons/fa6";
 import { useState } from "react";
 
 const PlayersCart = ({ Player }: { Player: IPlayerType }) => {
+  console.log(Player);
   const [isSelected, setIsSelected] = useState(false);
-
   return (
     <div className="border-3 border-gray-200 rounded-2xl flex flex-col justify-center items-center p-5 col-span-1  ">
       <div className="w-full  md:h-36 lg:h-50 aspect-auto object-cover bg-amber-500 rounded-3xl">

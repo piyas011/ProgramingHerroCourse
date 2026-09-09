@@ -1,10 +1,19 @@
 import type { IPlayerType } from "../types/type";
 import PlayersCart from "./PlayersCart";
 
-const AvailablePlayers = ({ Players }: { Players: IPlayerType[] }) => {
-  return Players.map((Player: IPlayerType) => {
-    return <PlayersCart key={Player.id} Player={Player} />;
-  });
+interface PlayerProps {
+  Players: IPlayerType[];
+}
+
+const AvailablePlayers = ({ Players }: PlayerProps) => {
+  // console.log(Players);
+  return (
+    <>
+      {Players.map((Player) => {
+        return <PlayersCart Player={Player} />;
+      })}
+    </>
+  );
 };
 
 export default AvailablePlayers;

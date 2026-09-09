@@ -1,5 +1,5 @@
 import { use, useState } from "react";
-import type { IPlayerType } from "../types/type";
+import type { IBalance, IPlayerType } from "../types/type";
 import AvailablePlayers from "./AvailablePlayers";
 import SelectedPlayers from "./SelectedPlayers";
 
@@ -7,8 +7,15 @@ interface PlayersPromiseProps {
   PlayersPromise: Promise<IPlayerType[]>;
 }
 
-const Players = ({ PlayersPromise }: PlayersPromiseProps) => {
+interface BalanceDataPromiseProps {
+  BalanceDataPromise: Promise<IBalance>;
+}
+
+type PlayerProps = PlayersPromiseProps & BalanceDataPromiseProps;
+
+const Players = ({ PlayersPromise, BalanceDataPromise }: PlayerProps) => {
   const Players = use(PlayersPromise);
+  const balance = use(BalanceDataPromise);
 
   const [buttonType, setButtonType] = useState("Available");
 

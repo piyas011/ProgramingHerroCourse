@@ -26,7 +26,10 @@ function App() {
       <Suspense
         fallback={<h1 className="text-blue-500 text-2xl">Loading...</h1>}
       >
-        <Players PlayersPromise={PlayersPromise()} />
+        <Players
+          PlayersPromise={PlayersPromise()}
+          BalanceDataPromise={BalanceDataPromise()}
+        />
       </Suspense>
     </>
   );
