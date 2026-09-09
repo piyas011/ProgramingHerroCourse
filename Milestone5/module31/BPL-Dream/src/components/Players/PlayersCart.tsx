@@ -4,9 +4,22 @@ import { CiStar } from "react-icons/ci";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
 import { useState } from "react";
 
-const PlayersCart = ({ Player }: { Player: IPlayerType }) => {
-  console.log(Player);
+interface IPlayerProps {
+  Player: IPlayerType;
+  taka: number;
+  setTaka: React.Dispatch<React.SetStateAction<number>>;
+}
+
+const PlayersCart = ({ Player, taka, setTaka }: IPlayerProps) => {
   const [isSelected, setIsSelected] = useState(false);
+
+  // console.log(setTaka, taka);
+
+  const handelSelectedPlayer = () => {
+    setIsSelected(true);
+    setTaka(taka - Player.basePrice);
+  };
+
   return (
     <div className="border-3 border-gray-200 rounded-2xl flex flex-col justify-center items-center p-5 col-span-1  ">
       <div className="w-full  md:h-36 lg:h-50 aspect-auto object-cover bg-amber-500 rounded-3xl">
@@ -67,9 +80,9 @@ const PlayersCart = ({ Player }: { Player: IPlayerType }) => {
 
           {/*Button  */}
           <button
-            className={`btn ${isSelected ? "" : "bg-[#E7FE2A]"}`}
+            className={`btn ${isSelected ? "" : "bg-[#2af0fe]"}`}
             disabled={isSelected}
-            onClick={() => setIsSelected(true)}
+            onClick={() => handelSelectedPlayer()}
           >
             {isSelected ? "Selected " : "Choose Player "}
           </button>

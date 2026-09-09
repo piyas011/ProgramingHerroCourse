@@ -1,17 +1,14 @@
 import Logo from "../assets/logo-footer.png";
 import { IoMdAddCircle } from "react-icons/io";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
-import type { IBalance } from "./types/type";
-import { use } from "react";
 
-interface BalanceDataPromiseProps {
-  BalanceDataPromise: Promise<IBalance>;
+interface Props {
+  taka: number;
+  // setTaka: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default function Nav({ BalanceDataPromise }: BalanceDataPromiseProps) {
-  const balance = use(BalanceDataPromise);
-  // console.log(balance);
-
+export default function Nav({ taka }: Props) {
+  // console.log(taka);
   return (
     <nav className="container mx-auto flex justify-between m-5">
       <a href="#">
@@ -36,7 +33,7 @@ export default function Nav({ BalanceDataPromise }: BalanceDataPromiseProps) {
 
         <strong className="btn cursor-default ">
           <FaBangladeshiTakaSign />
-          {balance.Balance} TK
+          {taka} TK
           <button
             className="ml-1 rounded-full p-2 bg-gray-100 font-bold
             text-2xl btn "

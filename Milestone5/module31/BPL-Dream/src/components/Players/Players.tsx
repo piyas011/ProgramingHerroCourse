@@ -1,21 +1,18 @@
 import { use, useState } from "react";
-import type { IBalance, IPlayerType } from "../types/type";
+import type { IPlayerType } from "../types/type";
 import AvailablePlayers from "./AvailablePlayers";
 import SelectedPlayers from "./SelectedPlayers";
 
 interface PlayersPromiseProps {
   PlayersPromise: Promise<IPlayerType[]>;
+  taka: number;
+  setTaka: React.Dispatch<React.SetStateAction<number>>;
 }
 
-interface BalanceDataPromiseProps {
-  BalanceDataPromise: Promise<IBalance>;
-}
-
-type PlayerProps = PlayersPromiseProps & BalanceDataPromiseProps;
-
-const Players = ({ PlayersPromise, BalanceDataPromise }: PlayerProps) => {
+const Players = ({ PlayersPromise, taka, setTaka }: PlayersPromiseProps) => {
   const Players = use(PlayersPromise);
-  const balance = use(BalanceDataPromise);
+
+  // console.log(balance);
 
   const [buttonType, setButtonType] = useState("Available");
 
@@ -35,13 +32,13 @@ const Players = ({ PlayersPromise, BalanceDataPromise }: PlayerProps) => {
         <div>
           <button
             onClick={() => handleUpdateButtonType("Available")}
-            className={`  sm:btn border-r-0 py-2 px-3 rounded-r-none rounded-[10px] border ${buttonType === "Available" ? "bg-[#E7FE2A]" : ""} `}
+            className={`  sm:btn border-r-0 py-2 px-3 rounded-r-none rounded-[10px] border ${buttonType === "Available" ? "bg-[#2af0fe]" : ""} `}
           >
             Available
           </button>
           <button
             onClick={() => handleUpdateButtonType("Selected")}
-            className={`sm:btn border-l-0 py-2 px-3 rounded-l-none rounded-[10px] border ${buttonType === "Selected" ? "bg-[#E7FE2A]" : ""} `}
+            className={`sm:btn border-l-0 py-2 px-3 rounded-l-none rounded-[10px] border ${buttonType === "Selected" ? "bg-[#2af0fe]" : ""} `}
           >
             Selected ( 0 )
           </button>
@@ -55,7 +52,7 @@ const Players = ({ PlayersPromise, BalanceDataPromise }: PlayerProps) => {
       {/* Players Card */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-10 xl:grid-cols-3 ">
         {buttonType === "Available" ? (
-          <AvailablePlayers Players={Players} />
+          <AvailablePlayers Players={Players} taka={taka} setTaka={setTaka} />
         ) : (
           <SelectedPlayers />
         )}
