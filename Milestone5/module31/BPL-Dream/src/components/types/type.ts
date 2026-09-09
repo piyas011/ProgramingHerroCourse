@@ -13,3 +13,7 @@ export interface IPlayerType {
   status: "available" | "not available";
   imageUrl: string;
 }
+
+export interface IBalance {
+  Balance: number;
+}

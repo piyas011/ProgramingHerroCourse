@@ -2,11 +2,14 @@ import { FaFlag, FaUser } from "react-icons/fa";
 import type { IPlayerType } from "../types/type";
 import { CiStar } from "react-icons/ci";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
+import { useState } from "react";
 
 const PlayersCart = ({ Player }: { Player: IPlayerType }) => {
+  const [isSelected, setIsSelected] = useState(false);
+
   return (
-    <div className="border-3 border-gray-200 rounded-2xl flex flex-col justify-center items-center p-5 mt-10">
-      <div className="w-full h-50 bg-amber-500 rounded-3xl">
+    <div className="border-3 border-gray-200 rounded-2xl flex flex-col justify-center items-center p-5 col-span-1  ">
+      <div className="w-full  md:h-36 lg:h-50 aspect-auto object-cover bg-amber-500 rounded-3xl">
         <img
           src={Player.imageUrl}
           alt={Player.name}
@@ -18,12 +21,14 @@ const PlayersCart = ({ Player }: { Player: IPlayerType }) => {
           <FaUser /> {Player.name}
         </h2>
         <div className="flex justify-between items-center">
-          <p className="flex items-center gap-2 text-gray-400">
+          <p className="flex items-center gap-0 sm:gap-1 text-gray-400 text-[12px] sm:text-[20px] ">
             <FaFlag /> {Player.country}
           </p>
-          <div className="flex gap-2">
-            <p className="border rounded-[5px] px-2">{Player.sport}</p>
-            <p className="border rounded-[5px] px-2 ml-1">
+          <div className="flex gap-2 justify-center items-center">
+            <p className="border rounded-[5px] px-0.5 sm:px-2 text-[12px] sm:text-[15px] 2xl:text-[20px]  ">
+              {Player.sport}
+            </p>
+            <p className="border rounded-[5px] px-0.5 sm:px-2 text-[12px] sm:text-[15px] 2xl:text-[20px] ">
               {Player.role}
               {Player.position}
             </p>
@@ -59,7 +64,15 @@ const PlayersCart = ({ Player }: { Player: IPlayerType }) => {
               <FaBangladeshiTakaSign />{" "}
             </span>
           </p>
-          <button className="btn">Choose Player</button>
+
+          {/*Button  */}
+          <button
+            className={`btn ${isSelected ? "" : "bg-[#E7FE2A]"}`}
+            disabled={isSelected}
+            onClick={() => setIsSelected(true)}
+          >
+            {isSelected ? "Selected " : "Choose Player "}
+          </button>
         </div>
       </div>
     </div>

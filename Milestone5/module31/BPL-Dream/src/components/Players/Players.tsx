@@ -19,8 +19,8 @@ const Players = ({ PlayersPromise }: PlayersPromiseProps) => {
   return (
     <div className="my-20">
       {/* top */}
-      <div className="flex justify-between items-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+      <div className="flex justify-between items-center flex-col sm:flex-row">
+        <h2 className="text-[18px] sm:text-3xl md:text-4xl font-bold mb-3">
           {buttonType === "Available"
             ? "Available Players"
             : `Selected Players ( 0 / 6)`}
@@ -28,13 +28,13 @@ const Players = ({ PlayersPromise }: PlayersPromiseProps) => {
         <div>
           <button
             onClick={() => handleUpdateButtonType("Available")}
-            className={`btn border-r-0 rounded-r-none ${buttonType === "Available" ? "bg-[#E7FE2A]" : ""} `}
+            className={`  sm:btn border-r-0 py-2 px-3 rounded-r-none rounded-[10px] border ${buttonType === "Available" ? "bg-[#E7FE2A]" : ""} `}
           >
             Available
           </button>
           <button
             onClick={() => handleUpdateButtonType("Selected")}
-            className={`btn border-r-0 rounded-r-none ${buttonType === "Selected" ? "bg-[#E7FE2A]" : ""} `}
+            className={`sm:btn border-l-0 py-2 px-3 rounded-l-none rounded-[10px] border ${buttonType === "Selected" ? "bg-[#E7FE2A]" : ""} `}
           >
             Selected ( 0 )
           </button>
@@ -46,7 +46,7 @@ const Players = ({ PlayersPromise }: PlayersPromiseProps) => {
       {/* </div> */}
 
       {/* Players Card */}
-      <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-10 xl:grid-cols-3 ">
         {buttonType === "Available" ? (
           <AvailablePlayers Players={Players} />
         ) : (
