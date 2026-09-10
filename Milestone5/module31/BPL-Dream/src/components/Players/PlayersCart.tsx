@@ -2,23 +2,39 @@ import { FaFlag, FaUser } from "react-icons/fa";
 import type { IPlayerType } from "../types/type";
 import { CiStar } from "react-icons/ci";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
-import { useState } from "react";
+import { useState, type Dispatch, type SetStateAction } from "react";
+import { toast } from "react-toastify";
 
 interface IPlayerProps {
   Player: IPlayerType;
   taka: number;
   setTaka: React.Dispatch<React.SetStateAction<number>>;
+  selectedPlayers: IPlayerType[];
+  setSelectedPlayers: Dispatch<SetStateAction<IPlayerType[]>>;
 }
 
-const PlayersCart = ({ Player, taka, setTaka }: IPlayerProps) => {
-  const [isSelected, setIsSelected] = useState(false);
+const PlayersCart = ({
+  Player,
+  taka,
+  setTaka,
+  selectedPlayers,
+  setSelectedPlayers,
+}: IPlayerProps) => {
+  const [isSelectedBtn, setIsSelected] = useState(false);
 
   // console.log(setTaka, taka);
 
   const handelSelectedPlayer = () => {
-    setIsSelected(true);
-    setTaka(taka - Player.basePrice);
+    if (Player.basePrice <= taka) {
+      setTaka(taka - Player.basePrice);
+      setSelectedPlayers([...selectedPlayers, Player]);
+      setIsSelected(true);
+      toast.success(`${Player.name} is purchased Successful`);
+    } else {
+      toast.error("Balance low");
+    }
   };
+  //  Selected Players Logic
 
   return (
     <div className="border-3 border-gray-200 rounded-2xl flex flex-col justify-center items-center p-5 col-span-1  ">
@@ -80,11 +96,11 @@ const PlayersCart = ({ Player, taka, setTaka }: IPlayerProps) => {
 
           {/*Button  */}
           <button
-            className={`btn ${isSelected ? "" : "bg-[#2af0fe]"}`}
-            disabled={isSelected}
+            className={`btn ${isSelectedBtn ? "" : "bg-[#2af0fe]"}`}
+            disabled={isSelectedBtn}
             onClick={() => handelSelectedPlayer()}
           >
-            {isSelected ? "Selected " : "Choose Player "}
+            {isSelectedBtn ? "Selected " : "Choose Player "}
           </button>
         </div>
       </div>

@@ -15,6 +15,8 @@ const Players = ({ PlayersPromise, taka, setTaka }: PlayersPromiseProps) => {
   // console.log(balance);
 
   const [buttonType, setButtonType] = useState("Available");
+  // Selected Players State
+  const [selectedPlayers, setSelectedPlayers] = useState<IPlayerType[]>([]);
 
   const handleUpdateButtonType = (type: "Available" | "Selected") => {
     setButtonType(type);
@@ -50,11 +52,21 @@ const Players = ({ PlayersPromise, taka, setTaka }: PlayersPromiseProps) => {
       {/* </div> */}
 
       {/* Players Card */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-10 xl:grid-cols-3 ">
+      <div className="mt-5">
         {buttonType === "Available" ? (
-          <AvailablePlayers Players={Players} taka={taka} setTaka={setTaka} />
+          <AvailablePlayers
+            Players={Players}
+            taka={taka}
+            setTaka={setTaka}
+            selectedPlayers={selectedPlayers}
+            setSelectedPlayers={setSelectedPlayers}
+          />
         ) : (
-          <SelectedPlayers />
+          <SelectedPlayers
+            Player={Player}
+            selectedPlayers={selectedPlayers}
+            setSelectedPlayers={setSelectedPlayers}
+          />
         )}
       </div>
     </div>
