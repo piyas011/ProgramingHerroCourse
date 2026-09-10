@@ -4,14 +4,15 @@ import Nav from "./components/Nav";
 import Players from "./components/Players/Players";
 import type { IPlayerType } from "./components/types/type";
 
-const PlayersPromise = async (): Promise<IPlayerType[]> => {
+const PlayersFatch = async (): Promise<IPlayerType[]> => {
   const res = await fetch("/data.json");
   const data = res.json();
   return data;
 };
 
 function App() {
-  const [taka, setTaka] = useState(500000);
+  const [PlayersPromise] = useState(() => PlayersFatch());
+  const [taka, setTaka] = useState(50000);
 
   return (
     <>
@@ -22,7 +23,7 @@ function App() {
         fallback={<h1 className="text-blue-500 text-2xl">Loading...</h1>}
       >
         <Players
-          PlayersPromise={PlayersPromise()}
+          PlayersPromise={PlayersPromise}
           taka={taka}
           setTaka={setTaka}
         />

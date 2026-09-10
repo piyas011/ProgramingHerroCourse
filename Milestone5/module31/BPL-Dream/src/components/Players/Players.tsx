@@ -63,7 +63,9 @@ const Players = ({ PlayersPromise, taka, setTaka }: PlayersPromiseProps) => {
           />
         ) : (
           <SelectedPlayers
-            Player={Player}
+            Player={Players}
+            taka={taka}
+            setTaka={setTaka}
             selectedPlayers={selectedPlayers}
             setSelectedPlayers={setSelectedPlayers}
           />
