@@ -97,7 +97,7 @@ const PlayersCart = ({
           {/*Button  */}
           <button
             className={`btn ${isSelectedBtn ? "" : "bg-[#2af0fe]"}`}
-            disabled={isSelectedBtn}
+            disabled={isSelectedBtn && Player.basePrice <= taka}
             onClick={() => handelSelectedPlayer()}
           >
             {isSelectedBtn ? "Selected " : "Choose Player "}
