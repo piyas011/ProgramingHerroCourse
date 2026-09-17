@@ -11,7 +11,7 @@ const PlayersFatch = async (): Promise<IPlayerType[]> => {
 };
 
 function App() {
-  const [PlayersPromise] = useState(() => PlayersFatch());
+  const [PlayersPromise] = useState(PlayersFatch());
   const [taka, setTaka] = useState(500000);
 
   return (
