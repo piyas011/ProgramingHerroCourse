@@ -1,5 +1,5 @@
 import BookDetails from "@/components/bookDetails";
-import { IBookType } from "@/components/type";
+import { IBookType } from "@/components/type/type";
 
 interface IBookDetailsPageProps {
   params: Promise<{

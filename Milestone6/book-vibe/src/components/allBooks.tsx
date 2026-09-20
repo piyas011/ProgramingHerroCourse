@@ -1,5 +1,5 @@
 import BooksCart from "./booksCart";
-import { IBookType } from "./type";
+import { IBookType } from "./type/type";
 
 const getBookData = async () => {
   const res = await fetch("http://localhost:3000/booksData.json");

@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { IBookType } from "./type";
+import { IBookType } from "./type/type";
+import ReadButton from "./bookDetails/ReadButton";
+import WishListButton from "./bookDetails/wishListButton";
 
 interface BooksProps {
   book: IBookType;
@@ -52,8 +54,8 @@ const BookDetails = ({ book }: BooksProps) => {
           <p className="font-bold">{book.rating}</p>
         </div>
         <div className="flex gap-4">
-          <button className="btn font-bold">Read</button>
-          <button className=" btn bg-[#59C6D2] text-white">Wishlist</button>
+          <ReadButton book={book} />
+          <WishListButton book={book} />
         </div>
       </div>
     </section>

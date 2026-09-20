@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IBookType } from "./type";
+import { IBookType } from "./type/type";
 import Link from "next/link";
 
 interface booksProps {
