@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { IBookType } from "./type";
+import Link from "next/link";
 
 interface booksProps {
   book: IBookType;
@@ -7,7 +8,10 @@ interface booksProps {
 
 const BooksCart = ({ book }: booksProps) => {
   return (
-    <div className="border border-gray-300 p-5 rounded-2xl hover:scale-95 duration-300">
+    <Link
+      href={`/home/${book.bookId}`}
+      className="border border-gray-300 p-5 rounded-2xl hover:scale-95 duration-300"
+    >
       <div className="w-full h-50 hover:scale-103 duration-300 delay-100 ">
         <Image
           className="w-full h-full object-cover rounded-2xl "
@@ -36,7 +40,7 @@ const BooksCart = ({ book }: booksProps) => {
           <p>{book.rating} ⭐</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
