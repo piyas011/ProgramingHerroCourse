@@ -9,19 +9,23 @@ const Navbar = () => {
   const links = (
     <>
       <Link
-        className={pathname === "/home" ? "text-green-500" : ""}
+        className={` ${pathname === "/home" || pathname === "/" ? "text-green-500 border-b-2" : ""}`}
         href="/home"
       >
         Home
       </Link>
       <Link
-        className={pathname === "/listedBook" ? "text-green-500" : ""}
+        className={
+          pathname === "/listedBook" ? "text-green-500  border-b-2" : ""
+        }
         href="/listedBook"
       >
         Listed Books
       </Link>
       <Link
-        className={pathname === "/pagesToRead" ? "text-green-500" : ""}
+        className={
+          pathname === "/pagesToRead" ? "text-green-500  border-b-2" : ""
+        }
         href="/pagesToRead"
       >
         Pages to Read
@@ -59,12 +63,12 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <Link href="/home" className="btn btn-ghost text-2xl font-extrabold">
+          <Link href="/" className="btn btn-ghost text-2xl font-extrabold">
             Book Vibe
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal gap-4 flex justify-center items-center text-[18px]">
+          <ul className="menu menu-horizontal gap-5 flex justify-center items-center text-[18px]">
             {links}
           </ul>
         </div>
