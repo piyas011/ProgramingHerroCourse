@@ -9,11 +9,11 @@ const BlogPostCart = ({ post }) => {
       <p>{title}</p>
       <p>{body}</p>
 
-      <div className="p-5">
-        <Link className="bg-blue-500 p-2 rounded-2xl" href={`blogs/${id}`}>
+      <button className="m-2">
+        <Link className="bg-blue-500 p-2 rounded-sm" href={`blogs/${id}`}>
           View details
         </Link>
-      </div>
+      </button>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import React from "react";
-import TechnologyCard from "../components/technologiesCard";
 
 const technologies = [
   {
@@ -74,17 +73,22 @@ const technologies = [
   },
 ];
 
-const SkillPage = () => {
+const TechnologyDetails = async ({ params }) => {
+  const { details } = await params;
+  const technology = technologies.find(
+    (technology) => details === technology.id,
+  );
+
   return (
-    <div className="grid grid-cols-12 min-h-dvh">
-      <div className="col-span-8 ">
-        {technologies.map((technology) => (
-          <TechnologyCard key={technology.id} technology={technology} />
-        ))}
-      </div>
-      <div className="col-span-4 bg-fuchsia-100">right</div>
+    <div>
+      <h1>Technology Details</h1>
+      <p>{technology.id}</p>
+      <p>{technology.name}</p>
+      <p>{technology.fullName}</p>
+      <p>{technology.rating}</p>
+      <p>{technology.price}</p>
     </div>
   );
 };
 
-export default SkillPage;
+export default TechnologyDetails;
