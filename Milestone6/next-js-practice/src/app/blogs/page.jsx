@@ -12,7 +12,7 @@ const BlogsPage = async () => {
   return (
     <div className="bg-amber-100">
       <h1 className="text-5xl">Blog : {blogs.length}</h1>
-      <div className="grid grid-cols-3 gap-5 p-3">
+      <div className="grid grid-cols-3 gap-4 p-3">
         {blogs.map((post) => (
           <BlogPostCart key={post.id} post={post} />
         ))}
