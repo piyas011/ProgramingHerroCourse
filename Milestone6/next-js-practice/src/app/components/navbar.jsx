@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const Navbar = () => {
+  const pathName = usePathname();
+
   return (
     <header className=" h-20 z-50 bg-amber-50 flex justify-around items-center">
       <div>
@@ -13,22 +18,52 @@ const Navbar = () => {
       <nav>
         <ul className="flex justify-between items-center gap-5">
           <li>
-            <Link href="/">Home</Link>
+            <Link
+              className={`${pathName === "/" ? "text-blue-500" : ""}`}
+              href="/"
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link
+              className={`${pathName === "/about" ? "text-blue-500" : ""}`}
+              href="/about"
+            >
+              About
+            </Link>
           </li>
           <li>
-            <Link href="/blogs">Blogs</Link>
+            <Link
+              className={`${pathName === "/blogs" ? "text-blue-500" : ""}`}
+              href="/blogs"
+            >
+              Blogs
+            </Link>
           </li>
           <li>
-            <Link href="/skill">Skill</Link>
+            <Link
+              className={`${pathName === "/skill" ? "text-blue-500" : ""}`}
+              href="/skill"
+            >
+              Skill
+            </Link>
           </li>
           <li>
-            <Link href="/todos">Todos</Link>
+            <Link
+              className={`${pathName === "/todos" ? "text-blue-500" : ""}`}
+              href="/todos"
+            >
+              Todos
+            </Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link
+              className={`${pathName === "/contact" ? "text-blue-500" : ""}`}
+              href="/contact"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
