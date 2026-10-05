@@ -32,6 +32,24 @@ const SignInPage = () => {
     console.log(resData, error);
   };
 
+  const handelGoogleSignIn = async () => {
+    const resData = await signIn.social({
+      provider: "google",
+    });
+  };
+
+  const handelGithubSignIn = async () => {
+    const resData = await signIn.social({
+      provider: "github",
+    });
+  };
+
+  const handelDiscordSignIn = async () => {
+    const resData = await signIn.social({
+      provider: "discord",
+    });
+  };
+
   return (
     <div className="flex flex-col justify-center items-center p-5 bg-amber-200">
       <h1>Sign In Page</h1>
@@ -83,6 +101,15 @@ const SignInPage = () => {
           <Button type="reset" variant="secondary">
             Reset
           </Button>
+        </div>
+        <div>
+          <Button onClick={handelGoogleSignIn}> Continue With Google</Button>
+        </div>
+        <div>
+          <Button onClick={handelGithubSignIn}> Continue With GitHub</Button>
+        </div>
+        <div>
+          <Button onClick={handelDiscordSignIn}> Continue With Discord</Button>
         </div>
       </Form>
     </div>
