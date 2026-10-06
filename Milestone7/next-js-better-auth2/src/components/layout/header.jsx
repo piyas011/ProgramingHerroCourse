@@ -15,15 +15,21 @@ export default function Header() {
   const links = (
     <>
       <li>
-        <Link href="#">Features</Link>
+        <Link href="/Features">Features</Link>
       </li>
+
       <li>
-        <Link href="#" className="font-medium text-accent" aria-current="page">
+        <Link
+          href="/Dashboard"
+          className="font-medium text-accent"
+          aria-current="page"
+        >
           Dashboard
         </Link>
       </li>
+
       <li>
-        <Link href="#">Pricing</Link>
+        <Link href="/Pricing">Pricing</Link>
       </li>
     </>
   );
@@ -33,13 +39,14 @@ export default function Header() {
       {session?.user ? (
         <>
           <p>Welcome {session?.user?.name}</p>
-          <Button onClick={() => signOut()}>Sign Out</Button>
+          <Link href="/profile">Profile</Link>
+          <Button onClick={() => signOut()}> Sign Out</Button>
         </>
       ) : (
         <>
           {" "}
-          <Link href="/signIn">Sign In</Link>
-          <Link href="/signUp">Sign Up</Link>
+          <Link href="/sign-in">Sign In</Link>
+          <Link href="/sign-up">Sign Up</Link>
         </>
       )}
     </>
