@@ -12,6 +12,7 @@ import {
   TextField,
 } from "@heroui/react";
 import { signIn } from "@/lib/auth-client";
+import Link from "next/link";
 
 const SignInPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -110,6 +111,9 @@ const SignInPage = () => {
         </div>
         <div>
           <Button onClick={handelDiscordSignIn}> Continue With Discord</Button>
+        </div>
+        <div>
+          <Link href="/forgot-password">forget password ?</Link>
         </div>
       </Form>
     </div>
